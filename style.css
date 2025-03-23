@@ -43,6 +43,16 @@ a{
     width: fit-content;
     position: relative;
 }
+#hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: spanAnimation 1s ease;
+    animation-delay: 1s;
+}
 #hero .cta{
     display: inline-block;
     padding: 10px 30px;
@@ -60,3 +70,25 @@ a{
     background-color: crimson;
     color: #fff;
 }
+
+/* Keyframes */
+@keyframes spanAnimation {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* End Keyframes */
