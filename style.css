@@ -43,3 +43,20 @@ a{
     width: fit-content;
     position: relative;
 }
+#hero .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: crimson;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 20px;
+    transition: 0.3s ease;
+    transition-property: color, background-color;
+}
+#hero .cta:hover{
+    background-color: crimson;
+    color: #fff;
+}
